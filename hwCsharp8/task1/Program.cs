@@ -1,6 +1,11 @@
 ﻿// Задача 1: Задайте двумерный массив размером m×n,
 // заполненный случайными вещественными числами.
 
+int row = Prompt("Rows number: ");
+int column = Prompt("Columns number: ");
+double[,] array = InitArray(row, column);
+PrintArray(array);
+
 int Prompt(string message)
 {
     Console.Write(message);
@@ -33,8 +38,3 @@ void PrintArray(double[,] array)
             Console.WriteLine();
         }
     }    
-
-int row = Prompt("Rows number: ");
-int column = Prompt("Columns number: ");
-double[,] array = InitArray(row, column);
-PrintArray(array);
