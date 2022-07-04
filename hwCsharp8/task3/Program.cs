@@ -59,13 +59,13 @@ double[] FindAverageOfEachColumn(int[,] array)
     double[] average = new Double[array.GetLength(1)];
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        double temp = 0;
+        double sum = 0;
         for (int i = 0; i < array.GetLength(0); i++)
         {
-            temp += array[i, j];
+            sum += array[i, j];
         }
 
-        average[j] = temp / array.GetLength(0);
+        average[j] = sum / array.GetLength(0);
     }
 
     return average;
